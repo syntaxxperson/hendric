@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Hendric</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=s
+wap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #00c6ff;
+
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+
+                url('assets/img/bg-hero.jpg');
+
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 160px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .hero p {
+            opacity: 0.8;
+        }
+
+        /* SECTION */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* CARD */
+        .card {
+
+            background: white;
+            padding: 25px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* SKILLS */
+        .skill {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .bar {
+            height: 10px;
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .html {
+            width: 85%;
+            background: #3498db;
+        }
+
+        .python {
+            width: 75%;
+            background: #2ecc71;
+        }
+
+        .js {
+            width: 70%;
+            background: #e74c3c;
+        }
+
+        .net {
+            width: 65%;
+            background: #f39c12;
+        }
+
+        /* GRID */
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #222;
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 600px) {
+
+            .hero h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#skills">Skill</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <!-- HERO -->
+    <div class="hero">
+        <img src="images.jpg">
+        <h1>Hello I'm Hendric Moriz Heatubun</h1>
+        <p>NIM: 202451093 | Mahasiswa Ilmu Komputer</p>
+    </div>
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="card">
+                <p>
+                    Saya adalah mahasiswa Ilmu Komputer yang memiliki minat dalam
+                    pengembangan web, jaringan komputer, dan keamanan informasi.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skill</h2>
+            <div class="card">
+                <div class="skill">
+                    Networking
+
+                    <div class="bar">
+                        <div class="fill html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    Python
+                    <div class="bar">
+                        <div class="fill python"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    JavaScript
+                    <div class="bar">
+                        <div class="fill js"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    HTML & CSS
+                    <div class="bar">
+                        <div class="fill net"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- KEAHLIAN -->
+    <section>
+        <h2>Keahlian</h2>
+        <div class="grid">
+            <div class="card">💻 Web Development</div>
+            <div class="card">🐍 Programming Python</div>
+            <div class="card">🌐 Networking</div>
+        </div>
+    </section>
+    <!-- PROJECT -->
+    <section>
+        <h2>Proyek</h2>
+        <div class="grid">
+            <div class="card">Website Biodata</div>
+            <div class="card">Komfigurasi Dasar Jaringan</div>
+        </div>
+    </section>
+    <!-- EXPERIENCE -->
+    <section>
+        <h2>Pengalaman</h2>
+        <div class="card">
+
+            <p><b>2024 - Sekarang</b></p>
+            <p>Mahasiswa Ilmu Komputer</p>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Kontak</h2>
+        <p><i class='bx bx-phone'></i> 0812-XXXX-XXXX</p>
+        <p><i class='bx bx-envelope'></i> hendric@email.com</p>
+        <p><i class='bx bx-map'></i> Ambon, Maluku</p>
+    </section>
+</body>
+
+</html>
